@@ -1,3 +1,5 @@
+'use strict';
+
 const products = [ 
     { id: 3, price: 200, }, 
     { id: 4, price: 900, }, 
