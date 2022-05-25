@@ -3,7 +3,7 @@
 
 // 1.1 затем проитерируйтесь по кнопкам и каждой из
 // них добавьте обработчик клика - функцию handleClick
-Array.from(document.getElementsByTagName('button')).forEach((btn) => {
+document.querySelectorAll('button').forEach(btn => {
     btn.addEventListener('click', handleClick);
 });
 
