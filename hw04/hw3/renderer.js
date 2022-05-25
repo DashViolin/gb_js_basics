@@ -1,3 +1,5 @@
+'use strict';
+
 let getQuestionMessage = function(stageObj, stageNumber) {
     let message = []
     message.push(`Раунд № ${stageNumber}.`)

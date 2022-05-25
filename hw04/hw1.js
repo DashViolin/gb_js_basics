@@ -1,3 +1,5 @@
+'use strict';
+
 function Ranks(num) {
     if (Number.isInteger(num) && 0 <= num && num <= 999) {
         this.units = num % 10;

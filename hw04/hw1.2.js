@@ -1,3 +1,5 @@
+'use strict';
+
 function PostES5(author, text, date) {
     this.author = author;
     this.text = text;

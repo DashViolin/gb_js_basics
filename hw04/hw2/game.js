@@ -1,3 +1,5 @@
+'use strict';
+
 let game = {
     run() {
         while (true) {

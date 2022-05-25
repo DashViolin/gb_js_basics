@@ -1,3 +1,5 @@
+'use strict';
+
 let game = {
     run() {
         let wrongAnswers = 0;
@@ -6,8 +8,13 @@ let game = {
         let isWinner = true;
         for (const stage of stages) {
             let message = getQuestionMessage(stage, stageNum)
+            let answer = 0;
             while (true) {
-                answer = parseInt(prompt(message).trim());
+                answer = prompt(message);
+                if (answer === null) {
+                    return;
+                }
+                answer = parseInt(answer.trim());
                 if (answer > 0 && answer <= stage.answers.length){
                     break;
                 } else {
