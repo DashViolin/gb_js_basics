@@ -17,6 +17,7 @@
     -->
 
     <script>
+        'use strict';
         let div = document.querySelector('div');
 
         /**
@@ -36,10 +37,9 @@
         заполнения прогресс-бара.
         */
         for (let i = 0; i <= 100; i++) {
-            function call() {
+            setTimeout(function () {
                 changeProgress(i)
-            }
-            setTimeout(call, i * 100);
+            }, i * 100);
         }
     </script>
 </body>

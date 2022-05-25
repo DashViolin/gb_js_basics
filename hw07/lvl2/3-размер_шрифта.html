@@ -22,6 +22,7 @@
     
 
     <script>
+        'use strict';
         document.querySelector('div').style.fontSize = `${document.querySelector('input').value}px`
         function rangeChangeEventHandler (event) {
             document.querySelector('div').style.fontSize = `${event.target.value}px`

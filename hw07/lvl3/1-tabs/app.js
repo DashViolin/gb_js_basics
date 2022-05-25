@@ -13,7 +13,7 @@ const texts = {
 */
 let active = {}
 
-Array.from(document.querySelectorAll('.nav-link')).forEach((navLink) => {
+document.querySelectorAll('.nav-link').forEach(navLink => {
     navLink.addEventListener('click', clickHandler)
 })
 
@@ -34,7 +34,7 @@ function clickHandler(event) {
  * @param {MouseEvent} event 
  */
 function changeActiveClass(event) {
-    Array.from(document.querySelectorAll('.nav-link')).forEach((navLink) => {
+    document.querySelectorAll('.nav-link').forEach(navLink => {
         navLink.classList.remove('active')
     })
     event.target.classList.add('active')

@@ -20,9 +20,10 @@
     -->
 
     <script>
-        Array.from(document.getElementsByTagName('button')).forEach((btn) => {
+        'use strict';
+        document.querySelectorAll('button').forEach(btn => {
             btn.onclick = (event) => {
-                for (attr in event.target.dataset) {
+                for (let attr in event.target.dataset) {
                     console.log(`${attr}: ${event.target.dataset[attr]}`)
                 }
             }
