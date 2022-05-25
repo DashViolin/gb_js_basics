@@ -24,10 +24,11 @@
     -->
 
     <script>
-        Array.from(document.querySelectorAll('i'))
-            .forEach((i) => {
-                if (!(i.classList.contains('sign'))) i.classList.toggle('green')
-            });
+        document.querySelectorAll('i').forEach(i => {
+            if (!(i.classList.contains('sign'))) {
+                i.classList.toggle('green')
+            }
+        });
     </script>
 </body>
 </html>

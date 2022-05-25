@@ -18,7 +18,7 @@
     -->
 
     <script>
-        Array.from(document.getElementsByTagName("h2")).forEach(item => console.log(item.getAttribute('class')))
+        document.querySelectorAll("h2").forEach(item => console.log(item.getAttribute('class')))
     </script>
 </body>
 </html>

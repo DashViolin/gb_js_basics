@@ -16,10 +16,11 @@
     2. Проверьте, есть ли в ссылке текст "ссылка", и если нет, то добавьте. -->
 
     <script>
-        Array.from(document.querySelectorAll('a'))
-            .forEach((link) => {
-                if (!(link.textContent === 'ссылка')) link.textContent = 'ссылка'
-            });
+        document.querySelectorAll('a').forEach(link => {
+            if (link.textContent !== 'ссылка') {
+                link.textContent = 'ссылка'
+            }
+        });
     </script>
 </body>
 </html>

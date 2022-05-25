@@ -25,8 +25,9 @@
     и если есть, то удалите с помощью метода remove(). -->
 
     <script>
+        'use strict';
         let divs = document.querySelectorAll('.card');
-        for (div of divs) {
+        for (let div of divs) {
             if (div.classList.contains('hidden')) {
                 div.remove()
             }
