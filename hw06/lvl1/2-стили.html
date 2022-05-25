@@ -17,7 +17,8 @@
     padding. -->
 
     <script>
-        Array.from(document.getElementsByTagName('div')).forEach((div) => {div.style.padding = "10px"})
+        'use strict';
+        document.querySelectorAll('div').forEach(div => {div.style.padding = "10px"})
     </script>
 </body>
 </html>

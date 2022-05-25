@@ -36,11 +36,12 @@
      -->
 
     <script>
+        'use strict';
         document.querySelector('form').addEventListener('submit', buttonClickHandler);
 
         function buttonClickHandler(event) {
             let isValid = true;
-            Array.from(document.getElementsByTagName('input')).forEach((input) => {
+            document.querySelectorAll('input').forEach(input => {
                 if (input.value === '') {
                     isValid = false;
                     input.style.borderColor = 'red';

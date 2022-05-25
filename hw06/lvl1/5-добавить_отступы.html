@@ -25,7 +25,8 @@
     -->
 
     <script>
-        Array.from(document.getElementsByTagName('input')).forEach(function(input) {
+        'use strict';
+        document.querySelectorAll('input').forEach(input => {
             input.style.marginBottom = "10px";
         })
     </script>

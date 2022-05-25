@@ -44,15 +44,14 @@
     -->
 
     <script>
-        let products = document.querySelector('.product')
-        products.onclick = () => {
-            Array.from(document.querySelectorAll('.product')).forEach((product) => {
-                product.style.backgroundColor = "green";
-            });
-            Array.from(document.querySelectorAll('.productName')).forEach((name) => {
-                name.style.fontSize = "24px";
-            });
-        }
+        'use strict';
+        document.querySelectorAll('.product').forEach(product => {
+            product.style.backgroundColor = "green";
+        });
+            
+        document.querySelectorAll('.productName').forEach(name => {
+            name.style.fontSize = "24px";
+        });
     </script>
 </body>
 </html>

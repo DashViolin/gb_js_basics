@@ -41,10 +41,11 @@
     -->
 
     <script>
+        'use strict';
         function loadPictures() {
             let number = 1;
-            Array.from(document.querySelectorAll('img')).forEach((img) => {
-                img.setAttribute('src', `images\\${number}.jpg`);
+            document.querySelectorAll('img').forEach(img => {
+                img.setAttribute('src', `images/${number}.jpg`);
                 number++;
             })
         }

@@ -44,8 +44,9 @@
     -->
 
     <script>
+        'use strict';
         let btns = document.querySelectorAll('button');
-        Array.from(btns).forEach((btn) => {
+        btns.forEach(btn => {
             btn.addEventListener('click', closeClickHandler);
         })
 

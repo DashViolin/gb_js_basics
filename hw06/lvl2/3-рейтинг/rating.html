@@ -31,10 +31,11 @@
     -->
 
     <script>
+        'use strict';
         let goldenClass = 'golden';
-        let stars = document.getElementsByTagName('i');
+        let stars = document.querySelectorAll('i');
 
-        Array.from(stars).forEach((item) => {
+        stars.forEach(item => {
             item.addEventListener('mouseover', (event) => {
                 if (!event.target.classList.contains(goldenClass)) {
                     event.target.classList.add(goldenClass);
@@ -47,7 +48,7 @@
             })
         });
 
-        Array.from(stars).forEach((item) => {
+        stars.forEach(item => {
             item.addEventListener('mouseout', (event) => {
                 if (event.target.classList.contains(goldenClass)) {
                     event.target.classList.remove(goldenClass);
