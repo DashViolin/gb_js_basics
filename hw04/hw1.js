@@ -7,8 +7,8 @@ function Ranks(num) {
         this.hundreds = Math.floor((num - this.units - this.dozens) / 100) % 10;
     } else {
         console.log('Argument must be a number in range [0, 999].');
-    };
-};
+    }
+}
 
 let ranks1 = new Ranks(987);
 console.log(ranks1);
@@ -18,4 +18,3 @@ console.log(ranks2);
 
 let ranks3 = new Ranks(10000);
 console.log(ranks3);
-

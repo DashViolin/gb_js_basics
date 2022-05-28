@@ -7,7 +7,7 @@ function ProductES5(name, price) {
 
 ProductES5.prototype.make25PercentDiscount = function () {
     this.price = this.price * 0.75;
-};
+}
 
 
 class ProductES6 {
@@ -15,9 +15,10 @@ class ProductES6 {
         this.name = name;
         this.price = price;
     }
+
     make25PercentDiscount() {
         this.price = this.price * 0.75;
-    };   
+    }
 }
 
 
